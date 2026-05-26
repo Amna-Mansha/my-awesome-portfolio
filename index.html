@@ -1,0 +1,112 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amna Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init("YOUR_PUBLIC_KEY")
+</script>
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<!-- MODE BUTTON -->
+<button id="modeBtn">Mode</button>
+
+<!-- NAV -->
+<nav>
+  <h2 class="logo">Amnora</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h1>Hello, I'm <span>Amna</span></h1>
+    <p class="typing"></p>
+    <a href="#projects" class="btn">View Work</a>
+  </div>
+
+  <div class="hero-img">
+    <img src="https://dohaj.com/blog/wp-content/uploads/2024/03/hijab-girl-pic-for-fb-profile.jpeg" alt="Hero Image">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="reveal" id="about">
+  <h2>About Me</h2>
+  <p>I am learning Web Development & AI.</p>
+</section>
+
+<!-- SKILLS -->
+<section class="reveal" id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">JavaScript</div>
+    <div class="card">GitHub</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="reveal" id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f">
+      <h3>Portfolio</h3>
+    </div>
+
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+      <h3>Landing Page</h3>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="reveal" id="contact">
+  <h2>Contact</h2>
+
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+
+  <div class="icons">
+    <a href="#"><i class="fa-brands fa-github"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="mailto:test@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+  </div>
+</section>
+
+<footer>
+  <p>Created by Amna © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
