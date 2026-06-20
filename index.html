@@ -34,6 +34,9 @@
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="#dashboard">Dashboard</a></li>
+    <li><a href="#scheduler">Scheduler</a></li>
+    <li><a href="#meetings">Meetings</a></li> 
   </ul>
 </nav>
 
@@ -83,6 +86,49 @@
     </div>
 
   </div>
+</section>
+<!-- DASHBOARD -->
+<section class="reveal" id="dashboard">
+  <h2>Dashboard</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Upcoming Meetings</h3>
+      <p>3 Meetings</p>
+    </div>
+
+    <div class="card">
+      <h3>Pending Requests</h3>
+      <p>2 Requests</p>
+    </div>
+
+    <div class="card">
+      <h3>Available Slots</h3>
+      <p>5 Slots</p>
+    </div>
+  </div>
+</section>
+
+<!-- MEETING SCHEDULER -->
+<section class="reveal" id="scheduler">
+  <h2>Meeting Scheduler</h2>
+
+  <input type="date" id="date">
+  <input type="time" id="time">
+
+  <button onclick="addSlot()">Add Slot</button>
+
+  <ul id="slotList"></ul>
+</section>
+
+<!-- MEETING REQUESTS -->
+<section class="reveal" id="meetings">
+  <h2>Meeting Requests</h2>
+
+  <p>Status: <span id="status">Pending</span></p>
+
+  <button onclick="acceptMeeting()">Accept</button>
+  <button onclick="declineMeeting()">Decline</button>
 </section>
 
 <!-- CONTACT -->
