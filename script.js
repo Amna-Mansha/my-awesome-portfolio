@@ -1,4 +1,4 @@
- // LOADER
+// LOADER
 window.addEventListener("load", () => {
   document.getElementById("loader").style.display = "none"
 })
@@ -56,3 +56,23 @@ document.getElementById("contact-form").addEventListener("submit", (e) => {
   e.target.reset()
 })
 })
+function addSlot() {
+  const date = document.getElementById("date").value;
+  const time = document.getElementById("time").value;
+
+  if (date && time) {
+    const li = document.createElement("li");
+    li.innerText = date + " - " + time;
+    document.getElementById("slotList").appendChild(li);
+  }
+} 
+
+function acceptMeeting() {
+  document.getElementById("status").innerText = "Accepted";
+  document.getElementById("status").style.color = "green";
+}
+
+function declineMeeting() {
+  document.getElementById("status").innerText = "Declined";
+  document.getElementById("status").style.color = "red";
+} 
