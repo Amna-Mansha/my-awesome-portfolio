@@ -1,4 +1,4 @@
-// LOADER
+ // LOADER
 window.addEventListener("load", () => {
   document.getElementById("loader").style.display = "none"
 })
@@ -75,4 +75,4 @@ function acceptMeeting() {
 function declineMeeting() {
   document.getElementById("status").innerText = "Declined";
   document.getElementById("status").style.color = "red";
-} 
+}
