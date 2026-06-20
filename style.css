@@ -1,4 +1,4 @@
- *{
+*{
   margin:0;
   padding:0;
   box-sizing:border-box;
@@ -209,4 +209,45 @@ body.light .card,
 body.light .project-card{
   background:white;
   color:black;
+}
+#scheduler input{
+  padding:10px;
+  margin:10px;
+}
+
+#scheduler button,
+#meetings button{
+  padding:10px 20px;
+  margin:10px;
+  cursor:pointer;
+}
+
+#slotList{
+  margin-top:20px;
+}
+#dashboard .card{
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+#scheduler{
+    text-align:center;
+}
+
+#scheduler input,
+#scheduler button{
+    margin:10px;
+}
+#meetings{
+    text-align: center;
+}
+
+#meetings button{
+    margin: 10px;
+}
+#status{
+  font-weight:bold;
+  color:orange;
 }
