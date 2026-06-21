@@ -10,6 +10,9 @@ body{
   background:#0a0a0a;
   color:white;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* LOADER */
 #loader{
@@ -69,11 +72,18 @@ nav ul{
   display:flex;
   list-style:none;
   gap:20px;
+} 
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-nav a{
-  color:white;
-  text-decoration:none;
+nav a:hover {
+  color: #00c3ff;
+  transform: scale(1.1);
 }
 
 nav a:hover{color:#00c3ff}
@@ -137,11 +147,13 @@ h2{
   padding:20px;
   border-radius:15px;
   text-align:center;
-  transition:0.3s;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-.card:hover, .project-card:hover{
-  transform:translateY(-10px);
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 195, 255, 0.4);
 }
 
 .project-card img{
@@ -366,4 +378,35 @@ th,td{
     box-shadow: 0 0 15px rgba(0,195,255,0.3);
     max-width: 500px;
     margin: 20px auto;
+}
+@media (max-width: 768px) {
+
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  .project-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
