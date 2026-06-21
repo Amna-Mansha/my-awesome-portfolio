@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amna Portfolio</title>
+<title>Amna Mansha | Frontend Developer</title>
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -33,10 +33,13 @@
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#dashboard">Dashboard</a></li>
+    <li><a href="#video-call">video call</a></li>
+    <li></li><a href="#documents">Documents</a></li>
     <li><a href="#scheduler">Scheduler</a></li>
+    <li><a href="#payments">Payments</a></li>
     <li><a href="#meetings">Meetings</a></li> 
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
@@ -56,7 +59,9 @@
 <!-- ABOUT -->
 <section class="reveal" id="about">
   <h2>About Me</h2>
-  <p>I am learning Web Development & AI.</p>
+   <p>
+  Passionate Frontend Developer and AI Enthusiast. Currently learning HTML, CSS, JavaScript and building real-world projects.
+</p>
 </section>
 
 <!-- SKILLS -->
@@ -84,7 +89,16 @@
       <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
       <h3>Landing Page</h3>
     </div>
+     <div class="project-card">
 
+  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" 
+       alt="Nexus Investor Platform UI">
+
+  <h3>Nexus Investor Platform UI</h3>
+
+  
+
+</div>
   </div>
 </section>
 <!-- DASHBOARD -->
@@ -108,6 +122,47 @@
     </div>
   </div>
 </section>
+ <!-- VIDEO CALL -->
+<section class="reveal" id="video-call">
+  <h2>Video Call Interface</h2>
+
+  <div class="card">
+    <h3>Meeting Room</h3>
+    <div class="video-screen">
+  Video Preview
+</div>
+
+    <button>Start Call</button>
+    <button>End Call</button>
+    <button>Mute</button>
+    <button>Camera Off</button>
+  </div>
+</section>
+
+<section   id="documents">
+  <h2>Document Chamber</h2>
+
+  <input type="file">
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Business Plan.pdf</h3>
+      <p class="draft">Status: Draft</p>
+    </div>
+
+    <div class="card">
+      <h3>Agreement.pdf</h3>
+      <p class="review">Status: In Review</p>
+    </div>
+
+    <div class="card">
+      <h3>Contract.pdf</h3>
+      <p class="signed">Status: Signed</p>
+    </div>
+
+  </div>
+</section>
 
 <!-- MEETING SCHEDULER -->
 <section class="reveal" id="scheduler">
@@ -120,7 +175,6 @@
 
   <ul id="slotList"></ul>
 </section>
-
 <!-- MEETING REQUESTS -->
 <section class="reveal" id="meetings">
   <h2>Meeting Requests</h2>
@@ -130,6 +184,96 @@
   <button onclick="acceptMeeting()">Accept</button>
   <button onclick="declineMeeting()">Decline</button>
 </section>
+
+<section class="reveal" id="payments">
+  <h2>Payment Dashboard</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Wallet Balance</h3>
+      <p>$5,000</p>
+    </div>
+
+    <div class="card">
+      <h3>Total Deposits</h3>
+      <p>$8,500</p>
+    </div>
+
+    <div class="card">
+      <h3>Total Withdrawals</h3>
+      <p>$3,500</p>
+    </div>
+
+  </div>
+
+  <br>
+
+  <button>Deposit</button>
+  <button>Withdraw</button>
+  <button>Transfer</button>
+</section>
+<h2>Transaction History</h2>
+
+<table>
+  <tr>
+    <th>Amount</th>
+    <th>Sender</th>
+    <th>Receiver</th>
+    <th>Status</th>
+  </tr>
+
+  <tr>
+    <td>$500</td>
+    <td>Investor A</td>
+    <td>Amna</td>
+    <td>Completed</td>
+  </tr>
+
+  <tr>
+    <td>$300</td>
+    <td>Amna</td>
+    <td>Vendor</td>
+    <td>Pending</td>
+  </tr>
+</table>
+<section class="reveal" id="security">
+  <h2>Security Center</h2>
+
+  <input type="password" id="password" placeholder="Enter Password">
+  <p id="strength">Strength: Weak</p>
+</section>
+<div class="card">
+  <h3>Two-Factor Authentication</h3>
+
+  <input type="text" placeholder="Enter OTP">
+  <button>Verify OTP</button>
+</div>
+<section class="reveal" id="roles">
+  <h2>User Roles</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Investor</h3>
+      <p>Can invest and view startups.</p>
+    </div>
+
+    <div class="card">
+      <h3>Entrepreneur</h3>
+      <p>Can create projects and receive funding.</p>
+    </div>
+
+    <div class="card">
+      <h3>Admin</h3>
+      <p>Can manage platform users.</p>
+    </div>
+
+  </div>
+</section>
+
+
+ 
 
 <!-- CONTACT -->
 <section class="reveal" id="contact">
@@ -143,8 +287,8 @@
   </form>
 
   <div class="icons">
-    <a href="#"><i class="fa-brands fa-github"></i></a>
-    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/Amna-Mansha" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/amna-mansha" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     <a href="mailto:test@gmail.com"><i class="fa-solid fa-envelope"></i></a>
   </div>
 </section>

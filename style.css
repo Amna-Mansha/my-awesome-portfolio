@@ -225,13 +225,7 @@ body.light .project-card{
 #slotList{
   margin-top:20px;
 }
-#dashboard .card{
-    background: rgba(255,255,255,0.08);
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
+ 
 #scheduler{
     text-align:center;
 }
@@ -250,4 +244,126 @@ body.light .project-card{
 #status{
   font-weight:bold;
   color:orange;
+}
+#video-call{
+  text-align:center;
+}
+
+#video-call .card{
+  max-width:600px;
+  margin:0 auto;
+}
+
+#video-call button{
+  padding:10px 20px;
+  margin:10px;
+  cursor:pointer;
+}
+.video-screen{
+  width: 500px;
+  height: 250px;
+  margin: 20px auto;
+  border: 2px solid #00c3ff;
+  border-radius: 15px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: rgba(255,255,255,0.05);
+}
+.draft{
+  color: orange;
+}
+
+.review{
+  color: yellow;
+}
+
+.signed{
+  color: lightgreen;
+}
+#documents input{
+  display:block;
+  margin:20px auto;
+}
+ #documents .grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+/* Scheduler Section Box */
+#scheduler {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #00c3ff;
+    box-shadow: 0 0 15px rgba(0,195,255,0.3);
+    max-width: 500px;
+    margin: 20px auto;
+}
+#payments .card{
+    background: #1a1a1a;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid #00c3ff;
+    box-shadow:0 0 15px rgba(0,195,255,0.3);
+}
+#payments{
+    text-align:center;
+}
+
+#payments button{
+    padding:10px 20px;
+    margin:10px;
+    cursor:pointer;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th,td{
+    border:1px solid #00c3ff;
+    padding:12px;
+    text-align:center;
+}
+#security{
+    text-align:center;
+}
+
+#security input{
+    padding:10px;
+    margin:10px;
+}
+
+#roles{
+    text-align:center;
+}
+
+.card{
+    background: #1a1a1a;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid #00c3ff;
+    box-shadow:0 0 15px rgba(0,195,255,0.3);
+}
+#meetings {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #00c3ff;
+    box-shadow: 0 0 15px rgba(0,195,255,0.3);
+    max-width: 500px;
+    margin: 20px auto;
+}
+#security {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #00c3ff;
+    box-shadow: 0 0 15px rgba(0,195,255,0.3);
+    max-width: 500px;
+    margin: 20px auto;
 }

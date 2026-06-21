@@ -76,3 +76,17 @@ function declineMeeting() {
   document.getElementById("status").innerText = "Declined";
   document.getElementById("status").style.color = "red";
 }
+ const password = document.getElementById("password");
+const strength = document.getElementById("strength");
+
+password.addEventListener("input", () => {
+  if(password.value.length < 6){
+    strength.innerText = "Strength: Weak";
+  }
+  else if(password.value.length < 10){
+    strength.innerText = "Strength: Medium";
+  }
+  else{
+    strength.innerText = "Strength: Strong";
+  }
+});
